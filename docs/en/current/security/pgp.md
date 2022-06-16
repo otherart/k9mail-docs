@@ -1,28 +1,25 @@
 # PGP End-to-end encryption
 
-## OpenKeychain Usage
+K-9 Mail does not have built-in encryption capabilities. Instead, it uses an external Android application called
+[OpenKeychain](https://www.openkeychain.org/).
 
-[OpenKeychain FAQ](https://www.openkeychain.org/faq/)
+## OpenKeychain Usage
 
 ### Selecting OpenKeychain as a Crypto Provider
 
-To start using PGP/MIME you first need to link OpenKeychain with K-9. To do this:
+To start using PGP you first need to link OpenKeychain with K-9. To do this:
 
-* Go to the account to link
-* Select Settings -> Account Settings
-* Select Cryptography
+* Install OpenKeychain from wherever you get your apps
+* In K-9, Select Settings -> Accounts
+* Choose the account for encryption
+* Select End-to-end encryption
+* Enable OpenPGP support
 
-You'll see the following options:
-![Cryptography Settings](img/crypto_selection.png)
-
-Click on the OpenPGP app option
-![OpenPGP App Selection](img/pgpmime_app_selection.png)
-
-Select OpenKeychain
+![Enable OpenPGP](img/selecting_openpgp.png)
 
 ## Selecting a Key
 
-Now you'll need to select a key. Click the 'My Key' option.
+Now you'll need to select a key. Click the 'Configure end-to-end key' option.
 
 You'll be sent a screen in the OpenKeychain app:
 
