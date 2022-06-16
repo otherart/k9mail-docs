@@ -1,4 +1,4 @@
-# PGP/MIME End-to-end encryption
+# PGP End-to-end encryption
 
 ## OpenKeychain Usage
 
