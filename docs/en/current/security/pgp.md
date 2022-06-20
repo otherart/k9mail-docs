@@ -31,24 +31,18 @@ See the [OpenKeychain](https://www.openkeychain.org/) website for more informati
 
 ### Signing & Encrypting Mail
 
-When composing e-mail with OpenKeychain setup and installed a new pad-lock icon
-appears in the top left of the composition screen. The icon represents the type of signing
-and encryption that will be applied to the message.
+When composing e-mail after OpenKeychain has been set up, a new padlock icon
+appears in the top right of the composition screen:
 
-Signing is the process of authenticating who wrote an email. Encrypting is the process of ensuring nobody but the
-intended recipient can read it. Signing and encryption both guarantee the email hasn't been tampered with.
+![Encryption Icon Disabled](img/encryption_openkeychain_compose_dialog.png)
 
-![Compose Screen](img/encryption_openkeychain_compose_dialog.png)
+(If the icon does not appear, it means that OpenKeychain does not know the PGP keys of any of the recipients)
 
-Tapping the icon leads to dialog that allows you to change between one of four states:
+Tapping the icon enables encryption and turns it green:
 
-* Never Sign or Encrypt - This means no encryption or signing will be applied
-* Always Sign, Never Encrypt - This means the email will be signed, but won't be encrypted.
-* Always Sign, Encrypt if Possible - The means the email will be signed, but if it can't be encrypted it will be sent
-  anyway.
-* Always Sign, Always Encrypt - This means the email will only be sent if it can be both signed and encrypted.
+![Encryption Icon Disabled](img/encryption_openkeychain_compose_enabled.png)
 
-![Compose Crypto Dialog](img/encryption_openkeychain_crypto_dialog.png)
+For more details on this icon, see [Editing Email Content](../sending/sending_content.md#encryption)
 
 ### Decrypting & Verifying Signed Mail
 
