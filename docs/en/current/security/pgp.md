@@ -42,7 +42,7 @@ Tapping the icon enables encryption and turns it green:
 
 ![Encryption Icon Disabled](img/encryption_openkeychain_compose_enabled.png)
 
-For more details on this icon, see [Editing Email Content](../sending/sending_content.md#encryption)
+For more details on this icon, see [Editing Email Content](../sending/sending_content.md#encryption).
 
 ### Decrypting & Verifying Signed Mail
 
@@ -57,7 +57,13 @@ Tapping on the green lock icon brings up this modal:
 
 ![Signed and Encrypted Email Details](img/pgpmime_trusted.png)
 
-For trusted signed messages it will look like this.
+#### Signed but unencrypted emails
+
+K-9 only allows you to send mails that are *both* encrypted and signed. Some other mailers
+allow the sender to sign the message, which proves it was sent by them, but without encrypting it.
+(This is sometimes useful e.g. in public mailing lists)
+
+For trusted signed messages K-9 will look like this.
 
 ![Signed Email Screen](img/pgpmime_signed_msg.png)
 
