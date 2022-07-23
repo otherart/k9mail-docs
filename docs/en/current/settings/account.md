@@ -394,8 +394,40 @@ the OpenPGP standard. Check the [PGP](../security/pgp.md) section for how to set
 
 ### Hide unencrypted signatures
 
+This will show messages that have a valid PGP signature, but are not encrypted, using the same icon
+as for messages that are neither signed nor encrypted:
+
+![Unencrypted signatures hidden](img/signed_unencrypted_hide.png)
+
+This is useful if you are only concerned about messages that are fully end-to-end-encrypted.
+
 ### Encrypt message subjects
 
+For historical reasons, the "Subject:" line of an end-to-end encrypted message is not encrypted.
+
+If you enable the "Encrypt message subjects" setting, K-9 will use a new protocol "Protected Headers for Cryptographic E-mail"
+to encrypt the subject line. 
+
+Support for such subject-line encryption is not universal, and some mail clients may instead display the
+dummy "Encrypted Message" subject instead.
+
 ### Store all drafts unencrypted
+
+If you are drafting an email that you plan to send without end-to-end encryption, 
+encrypting the draft message is not necessary. If the draft is encrypted, it could cause problems
+such as preventing you from finishing the draft on another mail client which doesn't support PGP.
+
+Therefore K-9 Mail only encrypts drafts when you have enabled end-to-end encryption for the message.
+
+There is one scenario in which this might be undesirable:
+
+- you start creating a message
+- you have *not* yet selected a recipient
+- K-9 doesn't know that you intend to encrypt the message
+- K-9 saves the draft without encryption
+- an eavesdropper on the server can read the draft
+
+If you are concerned about this, you can enable this option "Store all drafts unencrypted", 
+in which case K-9 will always store drafts with encryption, irrespective of the recipient.
 
 ### Send Autocrypt Setup Message
