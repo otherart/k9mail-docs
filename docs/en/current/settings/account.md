@@ -411,7 +411,7 @@ to encrypt the subject line.
 Support for such subject-line encryption is not universal, and some mail clients may instead display the
 dummy "Encrypted Message" subject instead.
 
-### Store all drafts unencrypted
+### Store all drafts encrypted
 
 If you are drafting an email that you plan to send without end-to-end encryption, 
 encrypting the draft message is not necessary. If the draft is encrypted, it could cause problems
@@ -427,7 +427,7 @@ There is one scenario in which this might be undesirable:
 - K-9 saves the draft without encryption
 - an eavesdropper on the server can read the draft
 
-If you are concerned about this, you can enable this option "Store all drafts unencrypted", 
+If you are concerned about this, you can enable this option "Store all drafts encrypted", 
 in which case K-9 will always store drafts with encryption, irrespective of the recipient.
 
 ### Send Autocrypt Setup Message
