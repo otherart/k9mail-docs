@@ -4,11 +4,31 @@
 
 Tap the contact icon on the left of the message to select one or more messages.
 
+![Multi select](img/managing_multiselect.png)
+
 When one or more messages are selected, actions appear in the Action Bar at the top. There is also
 an overflow menu, so some of the actions might require you to tap the right hand menu icon (circled below.)
 If you are unsure of the meaning of an icon, you can safely long-press it to show a tooltip.
 
 ![Message Options](img/reading_actionbar_options.png)
+
+The icons have the following meanings:
+
+<table>
+<tr>
+<td> <img src="../img/ic_trash_can.svg" class="example_icon"> </td><td>Delete </td> 
+</tr>
+<tr>
+<td> <img src="../img/ic_opened_envelope.svg" class="example_icon"> </td><td>Mark as read</td> 
+</tr>
+<tr>
+<td> <img src="../img/ic_mark_new.svg" class="example_icon"> </td><td>Mark as unread</td> 
+</tr>
+<tr>
+<td> <img src="../img/ic_archive.svg" class="example_icon"> </td><td>Move the selected message(s) to the configured Archive folder</td> 
+</tr>
+</table>
+
 
 
 ## Message Actions
